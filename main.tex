@@ -1,0 +1,128 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage{natbib}
+\usepackage{amsmath}
+\setlength{\oddsidemargin}{0.5cm}
+\setlength{\evensidemargin}{0.5cm}
+\setlength{\topmargin}{-1.6cm}
+\setlength{\leftmargin}{0.5cm}
+\setlength{\rightmargin}{0.5cm}
+\setlength{\textheight}{24.00cm} 
+\setlength{\textwidth}{15.00cm}
+\parindent 0pt
+\parskip 5pt
+\pagestyle{plain}
+
+\title{Research Proposal\\
+       \large Measurement and Comparison of Inequity Aversion \\ Preferences in Real Earnings Experiments}
+\author{
+  Vikram Jambulapati\\
+  \texttt{vikjam@ucsd.edu}
+  \and
+  Arman Khachiyan\\
+  \texttt{arman@ucsd.edu}
+}
+\date{}
+
+\newcommand{\namelistlabel}[1]{\mbox{#1}\hfil}
+\newenvironment{namelist}[1]{%1
+\begin{list}{}
+    {
+        \let\makelabel\namelistlabel
+        \settowidth{\labelwidth}{#1}
+        \setlength{\leftmargin}{1.1\labelwidth}
+    }
+  }{%1
+\end{list}}
+
+\begin{document}
+\maketitle
+
+\section*{Background}
+There have been several papers exploring the theoretical foundations for equity preferences (\citealp{Andreoni_EJ1990}; \citealp{Fehr_Schmidt_HB2006}; \citealp{Rabin_AER1993}), and applications measuring equity preferences (\citealp{Erkal_Gangadharan_Nikiforakis_AER2011}; \citealp{Akbas_Ariely_Yuksel_2016}; \citealp{Gee_Migueis_Parsa_EE2017}), but only a few papers (\citealp{Cappelen_Hole_Sorensen_AER2007}; \citealp{Saito_AER2013}) distinguish between preferences for different types of inequity. Some experiments have shown that inequity preferences may be very sensitive to the details of a given scenario (..). Of particular importance are whether decisions are private and whether subjects work for their earnings (\citealp{Cherry_Frykblom_Shogren}; \citealp{Carlsson_He_Martinsson_EE2013}). This literature is lacking in two key respects which we attempt to address. First, there are no accepted experimental designs which measure specific inequity aversion preferences, rather than a general distaste for inequity. Specifically, existing methods have not been successfully used to measure preferences at rates of equity relevant to redistributive policy. The second key gap we attempt to fill is defining specific inequity aversion motivators inspired by related fields of study, and testing the strength of each notion among participant preferences. 
+% * <vikjam@gmail.com> 2018-07-18T18:34:22.891Z:
+% 
+% > \citealp{Cappelen_Hole_Sorensen_AER2007}; \citealp{Saito_AER2013}
+% How do we distinguish this paper from these, in particular, Saito (2013) seems very similar to what I had in mind.
+% 
+% ^ <arman.khachiyan@gmail.com> 2018-07-22T19:34:49.758Z:
+% 
+% looks like the saito paper is very theoretical, and only briefly mentions how their theorems relate to existing experimental results. I think our main contribution is designing novel experiments. My guess is Saito lays the theoretical groundwork for the arguments we'll want to make.
+%
+% ^.
+% * <vikjam@gmail.com> 2018-07-18T17:08:11.801Z:
+% 
+% > (..)
+% Did you have in mind a particular citation for this? 
+% 
+% ^ <arman.khachiyan@gmail.com> 2018-07-22T19:34:58.607Z:
+% 
+% no
+%
+% ^.
+
+\section*{Aim}
+
+We propose studying 1) share of luck (rather than effort) in the payoff function, and 2) technology available to generate income. The share of luck vs effort has been the underlying notion of inequity applied in several recent papers (\citealp{Alensina_Di_Tella_MacCulloch_JPub2004}; \citealp{Erkal_Gangadharan_Nikiforakis_AER2011}; \citealp{Lefgren_Sims_Stoddard}); we contribute a research design that better isolates this style of inequity at all levels (i.e. everything from 0\% luck to 100\% luck). Technology available for income generation is a common equity concept in other social sciences (...soc?, institutional privileged?), but has only been investigated in limited settings in economics (monopoly example).
+
+We aim to both improve on the existing economics methods for measuring inequity aversion with these two types of inequity, and directly comparing these inequity concepts against each other. To compare across inequity types (and thus experimental designs), we will use a between subject framework in which each subject will only face one type of inequity. After learning about the experimental design and the style of inequity they will face (but not their personal level), subjects in both treatment arms will decide how much insurance to buy. Making the treatments arms as similar as possible, aside from the different inequity structure, allows for direct test on the share of insurance uptake across treatments. We will also compare other measures of altruistic and redistributive tendencies in each case.
+
+\section*{Method}
+
+\begin{itemize}
+\item details on the design of each inequity experiment
+\item measures we'll collect from each, including own income redistribution, hypothetical redistribution, third-party redistribution 
+\item measure we'll compare between the two inequity arms
+\end{itemize}
+
+Our treatments arms will each measure earnings inequity aversion for a different concept of inequity.
+
+\subsection*{The Share of Income Resulting from Effort}
+Subjects will face a payoff function which is a weighted sum of their effort and a random luck component. The payoff function will take the form,
+$$\alpha \cdot \text{effort}_i \cdot \text{pay rate} + (1-\alpha) \cdot \text{luck}_i,$$
+where $\text{luck}_i$ is a random variable taking the value of \$0 or \$20 with equal probabilities. The task will be to perform an encryption task of translating four-letter words into a string of numbers. Using this task, \citet{Erkal_Gangadharan_Nikiforakis_AER2011} found that at a pay rate of \$0.10 per encryption (the unit of effort), subjects will on average earn \$10 in 20 minutes (5 encryptions per minute), making the expected value of the lottery roughly equal to the average earnings of each participant.
+% * <vikjam@gmail.com> 2018-07-18T17:40:42.438Z:
+% 
+% > Using this task
+% In the Erkal, et al (2011) paper, I read that they use a tournament (end of p. 3331)--do we need to integrate that into this experiment? 
+% 
+% ^ <arman.khachiyan@gmail.com> 2018-07-22T19:37:23.507Z:
+% 
+% there's a bunch of ways to structure the payment and costs/benefits to each. The tournament approach isn't really compatible with my weighted payoff function scheme, but we should talk more specifically about how to structure the pay and what reallocation decisions people will make.
+%
+% ^.
+
+In this treatment arm, subjects will learn everything about the task and payoff before starting the experiment, with the key exception of the $\alpha$ parameter. Between session of the experiment, we will use different values of $\alpha$ [0, 0.01, 0.4, 0.5, 0.6, 0.99, 1], to capture changes in preferences as the level of inequity changes. After the effort task, subjects will learn $\alpha$ and decide on a redistribution of their own earnings, as well as hypothetical earnings.
+
+\subsection*{The Technology for Income Generation}
+
+To test whether inequity in the productivity of income generation is an important factor of inequity aversion, we will design a competitive online game in which subjects compete. The game will be pong, where each subject has a paddle on one side of the screen and attempts to prevent the ball from exiting their side of the screen. As the game goes on, the ball speed increases, ensuring that the game ends in a reasonable amount of time. Players will all compete against an identical computer algorithm. 
+
+The treatment we will vary is the size of the paddle each participant is given to play with. We believe this is a salient way to clearly advantage some players and disadvantage others, without directly determining their payoffs. Payoffs will be determine by how long the game lasts, with the pay rate per second parameterized so that subjects on average earn \$10. After the game, subjects in this treatment will also decide on a redistribution of their own earnings, as well as hypothetical earnings.
+
+We will also implement a version of this inequity concept which is very similar to first arm, in which $\alpha$ is always 1 and we vary the pay rate. While this is more comparable to the first arm, it may less directly isolate the relevant equity preference than the pong experiment because the means of technology is not as salient.
+
+\subsection*{Comparing Treatment Arms}
+
+To compare across treatment arms, we will offer all subjects an insurance option after learning the design but before beginning the task. Systematic differences in insurance take-up rates would be informative for determining which specific concepts of earnings inequity impact decision making the most.
+% * <vikjam@gmail.com> 2018-07-18T18:35:32.083Z:
+% 
+% > we will offer all subjects an insurance option
+% Maybe we can think more about this int he context of Saito (2013). If inequity aversion and risk aversion are correlated, how does this affect the interpretation.
+% 
+% ^.
+
+
+\section*{Implementation}
+
+\begin{itemize}
+\item how we'll program experiments, collect measures
+\item pilot size, scope, mechanical turk
+\item various power calculations for full experiment
+\end{itemize}
+
+\bibliographystyle{chicagoa}
+\bibliography{main}
+
+\end{document}
+
+
